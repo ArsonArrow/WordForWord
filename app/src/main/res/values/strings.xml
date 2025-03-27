@@ -54,4 +54,19 @@
     <string name="o">O</string>
     <string name="p">P</string>
     <string name="a">A</string>
+    <string name="m">M</string>
+    <string name="n">N</string>
+    <string name="b">B</string>
+    <string name="v">V</string>
+    <string name="c">C</string>
+    <string name="x">X</string>
+    <string name="z">Z</string>
+    <string name="l">L</string>
+    <string name="k">K</string>
+    <string name="j">J</string>
+    <string name="h">H</string>
+    <string name="g">G</string>
+    <string name="f">F</string>
+    <string name="d">D</string>
+    <string name="s">S</string>
 </resources>

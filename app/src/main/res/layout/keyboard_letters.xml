@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/keyboardContainer"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- Q W E R T Y U I O P -->
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/q"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/w"
+                android:layout_width="8dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/e"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/r"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/t"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/y"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/u"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/i"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/o"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/p"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- A S D F G H J K L -->
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/a"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="S"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="D"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="F"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="G"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="H"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="J"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="K"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="L"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Z X C V B N M -->
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="Z"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="X"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="C"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="V"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="B"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="N"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="M"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

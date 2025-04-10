@@ -1,253 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    tools:ignore="HardcodedText">
 
     <LinearLayout
         android:id="@+id/keyboardContainer"
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UselessParent">
 
         <!-- Row 1 -->
         <LinearLayout
             style="?android:attr/buttonBarStyle"
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <!-- Q W E R T Y U I O P -->
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/q"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="@string/q" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/w"
-                android:layout_width="8dp"
+                android:layout_width="4dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="@string/w" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/e"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/e" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/r"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/r" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/t"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/t" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/y"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/y" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/u"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/u" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/i"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/i" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/o"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/o" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/p"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/p" />
         </LinearLayout>
 
         <!-- Row 2 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <!-- A S D F G H J K L -->
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/a"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/a" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/s"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/s" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/d"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/d" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/f"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/f" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/g"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/g" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/h"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/h" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/j"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/j" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/k"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/k" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/l"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/l" />
         </LinearLayout>
 
         <!-- Row 3 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <!-- Z X C V B N M -->
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/z"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/z" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/x"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/x" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/c"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/c" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/v"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/v" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/b"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/b" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/n"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/n" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/m"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/m" />
         </LinearLayout>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

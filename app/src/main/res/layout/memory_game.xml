@@ -65,6 +65,7 @@
 
             <!-- Toggle Switch -->
             <Switch
+                android:checked="true"
                 android:id="@+id/inputToggleSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,10 +90,20 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:text="Words to memorize here"
-        app:layout_constraintTop_toBottomOf="@id/topBar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="2pt"
+        android:text="Use speech-to-text to practice!"
+        android:textSize="9pt"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
         tools:layout_editor_absoluteY="50dp" />
 
+    <include
+        layout="@layout/keyboard_mic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

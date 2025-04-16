@@ -6,7 +6,8 @@
     android:id="@+id/mainMenuLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
     <!-- 🔵 Top App Bar -->
     <androidx.appcompat.widget.Toolbar
@@ -15,37 +16,62 @@
         android:layout_height="56dp"
         android:background="#2196F3"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Word For Word"
-        app:titleTextColor="@android:color/white"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Word For Word"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- ⚙️ Settings Button Wrapper for touch padding -->
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintTop_toTopOf="@id/mainMenuToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/mainMenuToolbar">
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="Settings"
+            android:onClick="openSettings"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gear_icon"
+            app:tint="@android:color/white" />
+    </FrameLayout>
 
     <!-- 📄 RecyclerView to display folders/passages -->
+
+    <!-- ➕ Floating Action Button -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/itemRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@id/mainMenuToolbar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/mainMenuToolbar"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!-- ➕ Floating Action Button -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addItemFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:contentDescription="Add Item or Folder"
-        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:backgroundTint="#2196F3"
+        app:srcCompat="@android:drawable/ic_input_add"
         app:tint="@android:color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

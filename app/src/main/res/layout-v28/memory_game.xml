@@ -22,12 +22,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Back"
             android:padding="8dp"
             android:src="@android:drawable/ic_media_previous"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="Back"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <!-- 🔁 Restart Button -->
         <Button
@@ -64,13 +64,11 @@
                 app:tint="@color/white"/>
 
             <!-- Toggle Switch -->
-            <androidx.appcompat.widget.SwitchCompat
+            <Switch
                 android:id="@+id/inputToggleSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:thumbTint="@color/white"
-                android:trackTint="#B3FFFFFF" />
+                android:layout_marginStart="4dp"/>
 
             <!-- 🎙 Mic Icon -->
             <ImageView
@@ -83,13 +81,14 @@
 
         </LinearLayout>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- 📝 TextView Content Below -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/wordsRecyclerView"
+        android:id="@+id/memoryTextView"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="400dp"
         android:layout_margin="2pt"
         android:textSize="9pt"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,6 +101,7 @@
         android:id="@+id/keyboardContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -116,12 +116,6 @@
         <include
             android:id="@+id/keyboardNumbers"
             layout="@layout/keyboard_numbers"
-            android:visibility="gone" />
-
-        <!-- Mic Keyboard -->
-        <include
-            android:id="@+id/keyboardMic"
-            layout="@layout/keyboard_mic"
             android:visibility="gone" />
     </FrameLayout>
 
